@@ -1,0 +1,101 @@
+<!-- BMI WHEIT -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href=".\RESET.css">
+
+     <link rel="stylesheet" href=".\CSS.css">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>مقياس كتلة الجسم</title>
+     <style>
+      
+   *{
+    margin: 0px;
+    
+} 
+     
+     body{
+    background-color: rgb(0, 255, 81);
+    text-align: center;
+}
+#f{
+    margin-top: 35vh;
+    font-size: large;
+    font-weight: bold;
+}
+input{
+    width: 200px;
+    height: 25px;
+    font-size: large;
+} 
+h2{color: crimson;} 
+      
+     </style>
+</head>
+<body>
+     
+     <div id="f">
+          <label for="tol">الطول</label>
+          <br>
+          <input type="text" id="tol"  ></input>
+          <br>
+          <label for="wzn">الوزن</label>
+          <br>
+          <input type="text" id="wzn"  ></input>
+          <br>
+
+          <button type="submit" id="send" >ارسال</button>
+     </div>
+     <h2 id="shasha"></h2>
+     <h2 id="shasha2"></h2>
+     
+
+<script src=".\JS.JS">
+document.getElementById("send").addEventListener("click",function(){
+
+    var w = document.getElementById("wzn").value
+
+    var h = document.getElementById("tol").value
+    console.log(h,w,bmi2)
+    w = Number(w)
+    h = Number(h)
+    if (h>10) {
+        h/=100
+    }
+    var bmi = w/(h*h)
+    var bmi2 = w/(h*h)
+
+    if(bmi < 18){
+      bmi = "نحيف"
+
+    }else if(bmi2 <= 24.9){
+        bmi = "وزن مثالي"
+    }else if(bmi2 <= 29.9){
+        bmi = "وزن زائد"
+
+    }else if(bmi2 <= 34.9){
+        bmi = "سمنة درجةأولى"
+
+    }else if(bmi2 <= 39.9){
+        bmi = "سمنة درجة ثانية"
+
+    }else if(bmi2 > 39.9){
+        bmi = "سمنة خطيرة"
+
+    }else{
+        bmi="numbers"
+        bmi2="pleas write"
+    }
+
+   
+    document.getElementById("shasha").innerHTML= bmi2 
+    document.getElementById("shasha2").innerHTML= bmi 
+   
+z=h+w
+console.log(z)
+} )
+</script>     
+</body>
+</html>
