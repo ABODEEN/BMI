@@ -1,0 +1,15 @@
+﻿body{
+    background-color: rgb(0, 255, 81);
+    text-align: center;
+}
+#f{
+    margin-top: 35vh;
+    font-size: large;
+    font-weight: bold;
+}
+input{
+    width: 200px;
+    height: 25px;
+    font-size: large;
+} 
+h2{color: crimson;}
