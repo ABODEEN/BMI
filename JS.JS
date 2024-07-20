@@ -18,19 +18,19 @@ document.getElementById("send").addEventListener("click",function(){
 
     if(bmi < 18){
         bmi = "نحيف"
-        h2.style.color= yellow ;
+        h2.style.color= "yellow" ;
     }else if(bmi2 <= 24.9){
         bmi = "وزن مثالي"
-        h2.style.color= green; 
+        h2.style.color= "green" ; 
     }else if(bmi2 <= 29.9){
         bmi = "وزن زائد"
-        h2.style.color= yellow;
+        h2.style.color= "yellow" ;
     }else if(bmi2 <= 34.9){
         bmi = "سمنة درجةأولى"
-        h2.style.color= orange;
+        h2.style.color= "orange" ;
     }else if(bmi2 <= 39.9){
         bmi = "سمنة درجة ثانية"
-        h2.style.color= red ;
+        h2.style.color= "red" ;
     }else if(bmi2 > 39.9){
         bmi = "سمنة خطيرة"
         h2.style.color= rgb(0 , 0 139);
