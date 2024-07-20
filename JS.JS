@@ -41,3 +41,14 @@ document.getElementById("send").addEventListener("click",function(){
 z=h+w
 console.log(z)
 } )
+
+var ٠ = 0 ;
+var ١ = 1 ;
+var ٢ = 2 ;
+var ٣ = 3 ;
+var ٤ = 4 ;
+var ٥ = 5 ;
+var ٦ = 6 ;
+var ٧ = 7 ;
+var ٨ = 8 ;
+var ٩ = 9 ;
