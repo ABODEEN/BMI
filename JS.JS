@@ -33,7 +33,7 @@ document.getElementById("send").addEventListener("click",function(){
         h2.style.color= "red" ;
     }else if(bmi2 > 39.9){
         bmi = "سمنة خطيرة"
-        h2.style.color= rgb(0 , 0 139);
+        h2.style.color= "rgb(0 , 0 139)" ;
     }else{
         bmi="numbers"
         bmi2="pleas write"
