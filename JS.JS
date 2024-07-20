@@ -9,6 +9,16 @@ var ٦ = 6 ;
 var ٧ = 7 ;
 var ٨ = 8 ;
 var ٩ = 9 ;
+var 0 = 0 ;
+var 1 = 1 ;
+var 2 = 2 ;
+var 3 = 3 ;
+var 4 = 4 ;
+var 5 = 5 ;
+var 6 = 6 ;
+var 7 = 7 ;
+var 8 = 8 ;
+var 9 = 9 ;
 
 document.getElementById("send").addEventListener("click",function(){
 
