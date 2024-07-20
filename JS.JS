@@ -1,4 +1,3 @@
-document.getElementById("send").addEventListener("click",function(){
 
 var ٠ = 0 ;
 var ١ = 1 ;
@@ -10,6 +9,10 @@ var ٦ = 6 ;
 var ٧ = 7 ;
 var ٨ = 8 ;
 var ٩ = 9 ;
+
+document.getElementById("send").addEventListener("click",function(){
+
+
 
     var w = document.getElementById("wzn").value
 
