@@ -1,5 +1,5 @@
 
-
+/*
 document.getElementById("send").addEventListener("click",function(){
 
 
@@ -47,3 +47,57 @@ z=h+w
 console.log(z)
 } )
 
+*/
+
+document.getElementById("send").addEventListener("click", function() {
+    // الحصول على القيم المدخلة
+    var w = document.getElementById("wzn").value;
+    var h = document.getElementById("tol").value;
+    
+    // تحويل القيم إلى أرقام
+    w = Number(w);
+    h = Number(h);
+    
+    // تعديل الطول إذا كان أكبر من 10
+    if (h > 10) {
+        h /= 100;
+    }
+    
+    // حساب مؤشر كتلة الجسم (BMI)
+    var bmi = w / (h * h);
+    
+    // تحديد الفئة اللونية لمؤشر كتلة الجسم
+    var category;
+    var color;
+    if (bmi < 18) {
+        category = "نحيف";
+        color = "yellow";
+    } else if (bmi <= 24.9) {
+        category = "وزن مثالي";
+        color = "green";
+    } else if (bmi <= 29.9) {
+        category = "وزن زائد";
+        color = "yellow";
+    } else if (bmi <= 34.9) {
+        category = "سمنة درجة أولى";
+        color = "orange";
+    } else if (bmi <= 39.9) {
+        category = "سمنة درجة ثانية";
+        color = "red";
+    } else {
+        category = "سمنة خطيرة";
+        color = "rgb(0, 0, 139)";
+    }
+    
+    // عرض مؤشر كتلة الجسم والفئة الخاصة به
+    document.getElementById("shasha").innerHTML = bmi.toFixed(2);
+    document.getElementById("shasha2").innerHTML = category;
+    
+    // تغيير لون النص للفئة الخاصة بمؤشر كتلة الجسم
+    document.getElementById("shasha2").style.color = color;
+    
+    // معلومات التصحيح (اختياري)
+    console.log(h, w, bmi);
+    var z = h + w;
+    console.log(z);
+});
