@@ -1,9 +1,15 @@
-﻿body{
-    background-color: black;
-    text-align: center;
-    color: green;
-    
+body{
+background-image: url(https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_vwWbMtSeaJibyvvfjgq8GBAn4us7daWKq0C48bCKyJ6ZKwDfncIud2-7t0uoQX5p4cKFfCXXIqNr2saVacmhgsqFg9eoK3nRPSEJYf6wN_9g9K2I14Qfp_M7dbn_W8L00JwQW4gAw=w919-h516-p-k-no-nu);
+
+ background-color: black;
+background-size: cover;
+background-color: aqua;
+text-align: center;
+color: green;
+
+
 }
+
 #f{
     margin-top: 35vh;
     font-size: large;
